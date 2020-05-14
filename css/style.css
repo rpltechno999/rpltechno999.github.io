@@ -300,12 +300,9 @@ button {
      color: #fff;
      line-height: 70px;
  
- @media only screen and (max-width: 480px) {
-.responsive .logo a, .responsive .logo img{
-    max-height: none !important;
-    height: 50px !important;
-}
-}
+@media only screen and (max-width: 426px){ 
+.responsive #top #wrap_all .logo a > img {width: 183px !important;}
+.responsive #top #wrap_all .main_menu {right: -50px!important; }}
  }
 
 
