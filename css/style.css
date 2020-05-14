@@ -299,11 +299,12 @@ button {
      text-transform: uppercase;
      color: #fff;
      line-height: 70px;
- 
-@media only screen and (max-width: 426px){ 
-.responsive #top #wrap_all .logo a > img {width: 183px !important;}
-.responsive #top #wrap_all .main_menu {right: -50px!important; }}
- }
+ @media (max-width:629px) {
+  img.logo {
+    display: none;
+  }
+}
+  }
 
 
 /** banner section **/
@@ -388,6 +389,16 @@ button {
 
 .carousel-inner {
      margin-right: 142px;
+}
+
+.carousel-indicators{
+ @media (max-width: 767px) {
+  .carousel-indicators,
+  .carousel-indicators li {
+    cursor: default;
+    pointer-events: none;
+  }
+}
 }
 
 #banner1 .carousel-indicators {
