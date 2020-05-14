@@ -300,27 +300,13 @@ button {
      color: #fff;
      line-height: 70px;
  
- @media (min-width:769px) {
-    .site-branding {
-        display: inline-block;
-    }
-    .site-logo {
-        float: left;
-        margin-right: 20px;
-    }
-}
-@media (max-width: 768px) {
-    .inside-header {
-        display: table;
-    }
-    .site-logo {
-        display: table-header-group;
-    }
-    .site-branding {
-        display: table-footer-group;
-    }
+ @media only screen and (max-width: 480px) {
+.responsive .logo a, .responsive .logo img{
+    max-height: none !important;
+    height: 50px !important;
 }
 }
+ }
 
 
 /** banner section **/
